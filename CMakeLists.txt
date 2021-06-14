@@ -17,6 +17,7 @@ set(${PROJECT_NAME}_ImGui_SOURCE_DIR
     "Location of ImGui source")
 
 # TODO: imterm currently only works on Linux ...
+include(CMakeDependentOption)
 cmake_dependent_option(${PROJECT_NAME}_BUILD_DEMOS
                        "Build demo programs"
                        ON "UNIX;SDL2_FOUND;OPENGL_FOUND" OFF)
