@@ -32,7 +32,7 @@ Terminal::draw(const char *str_id, bool *p_open)
     //! @todo capture
     CaptureKeyboardFromApp();
 
-    for (int i=0; i < sizeof(io.InputQueueCharacters)/sizeof(ImWchar); i++) {
+    for (int i=0; i < io.InputQueueCharacters.size(); i++) {
         ImWchar c = io.InputQueueCharacters[i];
         if (!c)
             break;
