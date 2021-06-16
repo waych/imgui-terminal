@@ -33,7 +33,7 @@ public:
 	Terminal();
 	~Terminal();
 
-	void draw(const char *str_id, bool *p_open = nullptr);
+	void draw(const char *str_id);
 	void reset();
 	void write(const char*, int len = -1);
 	void write(uint8_t c);

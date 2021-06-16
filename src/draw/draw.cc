@@ -22,7 +22,7 @@ using namespace ImGui;
 namespace terminal {
 
 void
-Terminal::draw(const char *str_id, bool *p_open)
+Terminal::draw(const char *str_id)
 {
 
     auto &io = GetIO();
