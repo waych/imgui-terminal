@@ -135,7 +135,7 @@ Terminal::p_dispatch(uint8_t c)
     // @
     // A .. Z
     // [
-    // \
+    // \ -- (don't finish comments in C with backslash).
     // ]
     // ^
     // _
