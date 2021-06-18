@@ -34,8 +34,6 @@ Terminal::draw(const char *str_id)
 
     for (int i=0; i < io.InputQueueCharacters.size(); i++) {
         ImWchar c = io.InputQueueCharacters[i];
-        if (!c)
-            break;
         output(c);
     }
 
