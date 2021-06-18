@@ -207,10 +207,10 @@ ScreenState::copy_rect(uint32_t st, uint32_t sl, uint32_t sb, uint32_t sr,
     uint32_t db = dt + (sb - st);
     uint32_t dr = dl + (sr - sl);
 
-    uint32_t r_off_max = std::min(std::min(sb, height()) - st,
-                                  std::min(db, height()) - dt);
-    uint32_t c_off_max = std::min(std::min(sr, width()) - sl,
-                                  std::min(dr, width()) - dl);
+    int32_t r_off_max = std::min(std::min(sb, height()) - st,
+                                 std::min(db, height()) - dt);
+    int32_t c_off_max = std::min(std::min(sr, width()) - sl,
+                                 std::min(dr, width()) - dl);
 
 
     if (index(st, sl, overall) > index(dt, dl, overall)) {
