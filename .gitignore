@@ -1,0 +1,14 @@
+# Cache for languageserver
+.cache/
+
+# Typical cmake artifacts
+Build/
+CMakeCache.txt
+CMakeFiles/
+build.ninja
+cmake_install.cmake
+compile_commands.json
+
+ 
+
+
